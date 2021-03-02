@@ -75,19 +75,3 @@ tests = [50, 100, 150, 200, 250, 300, 350]
 for money in tests:
     sim = quantitySim(sampleSize=100000, initialMoney=money, hackedOdds=True, clover=True)
     print("Initial={}, Break-Even or Better Odds is {}, Avg Earnings is {}".format(money,sim[0], sim[1]))
-
-'''
-if DEBUG:
-    print("Outcomes is {}".format(outcomes))
-
-outcomeMoney = [element[0] for element in outcomes]
-if DEBUG:
-    print ("outcomeMoney is {}".format(outcomeMoney))
-
-
-plt.hist(outcomeMoney, density=False, bins=30)
-plt.ylabel('Occurrence')
-plt.xlabel('Outcome Money');
-# plt.plot(outcomes)
-plt.show()
-'''
